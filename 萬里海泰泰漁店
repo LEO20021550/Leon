@@ -1,0 +1,23 @@
+echo "# Leon" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/LEO20021550/Leon.git
+git push -u origin main
+
+class FishShop:
+    def __init__(self, name, location, specialties):
+        self.name = name
+        self.location = location
+        self.specialties = specialties
+
+    def introduce_shop(self):
+        print(f"歡迎來到{name}魚店，位於{self.location}。")
+        print("我們的特色產品包括：")
+        for specialty in self.specialties:
+            print(f"- {specialty}")
+
+wanli_fish_shop = FishShop("萬里海太太", "新北市萬里區", ["新鮮魚貨", "獨特海鮮料理"])
+
+wanli_fish_shop.introduce_shop()
